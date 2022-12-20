@@ -1,0 +1,74 @@
+/*menu to the right of page */
+.home-menu ul {
+    float: right;
+}
+/*keeping everything centered on the page */
+.header-container {
+    background-image: linear-gradient(to right, #1f8dd6, #91c5e8, #b0dbf8);
+    z-index: 1;
+    overflow: hidden;
+    width: 100%;
+    height: 95%;
+    top: 0;
+    left: 0;
+    position: absolute !important;
+}
+/*keeping main header centered */
+.header {
+    height: 50%;
+    margin: auto;
+    position: absolute;
+    top: 100px; left: 0; bottom: 0; right: 0;
+    text-align: center;
+    /*text-transform: uppercase; */
+}
+
+.head {
+    font-size: 250%;
+    color: white;
+    
+    
+}
+
+.subhead {
+    color: white;
+    letter-spacing: 0.05em;
+    opacity: 0.8;
+    
+}
+
+
+.footer {
+    color: white;
+    background-image: linear-gradient(to right, #1f8dd6, #91c5e8, #b0dbf8);
+    text-align: center;
+    position: absolute !important;
+    bottom: 0;
+    width: 100%;
+    height: 1%  
+}
+/*footer padding */
+.l-box {
+   padding: 1em; 
+}
+
+/*media query to keep site at 100% in all forms */
+@media screen and (max-width: 600px) {
+    .header {
+        width: 100%;
+    }  
+    }
+    @media screen and (max-width: 768px) {
+        .header {
+          width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 992px) {
+        .header {
+          width: 100%;
+        }
+      }
+
+     
+
