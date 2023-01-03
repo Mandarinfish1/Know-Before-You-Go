@@ -1,48 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
- 
-    <head>
-    <div w-type="event-discovery" w-tmapikey="Tm21BZGnX54PErRXwb9kX1hAcObamc31" w-googleapikey="YOUR_GOOGLE_API_KEY" w-keyword="" w-theme="simple" w-colorscheme="light" w-width="350" w-height="600" w-size="25" w-border="0" w-borderradius="4" w-radius="25" w-period="week" w-layout="vertical" w-attractionid="" w-promoterid="" w-venueid="" w-affiliateid="" w-segmentid="" w-proportion="custom" w-titlelink="off" w-sorting="dateAscending" w-id="id_2qzos" w-source="ticketmaster" w-branding="Ticketmaster" w-countrycode="US" w-postalcode="" w-city="" w-latlong=""></div>
-    <script src="https://ticketmaster-api-staging.github.io/products-and-docs/widgets/event-discovery/1.0.0/lib/main-widget.js"></script>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <title>Know Before You Go</title>
     <link rel="stylesheet" href="assets/style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
+        integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/base-min.css">
-  </head>
-<body>
-<!--Menu List to the right -->
-  <div class="menu">
-    <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
-        
-          <ul class="pure-menu-list">
-          <li class="pure-menu-item"><a href="#" class="pure-menu-link">Weather</a></li>
-          <li class="pure-menu-item"><a href="#" class="pure-menu-link">Events</a></li>
-          <li class="pure-menu-item"><a href="#" class="pure-menu-link">Contact Us</a></li>
-          </ul>
-    </div>
-</div>
-<!--Headers -->
-<div class="header-container">
-    <div class="header">
-        <h1 class="head"> &#127780; Know Before You Go!</h1>
-        <p class="subhead">
-          Need the weather report for an event? We have you covered.
-        </p>
-<!--Button leading to weather and event details -->
-        <p>
-            <form class="pure-form">
-              <input type="text" placeholder="Enter event here..." class="pure-input-rounded" />
-              <button type="submit" class="pure-button">Search</button>
-          </form>
-        </p>
+</head>
 
-    </div>
-</div>
-<!--footer -->
-<div class="footer l-box is-center ">
-  Made by THE&#8226;TEAM
-  </div>
+
+
+
+
+<body class="main-container" onload="giveData()">
+
+    <!-- weather portion -->
+    <div class="weather-container">
+        <div class="main-page text-center" id="main-page">
+
+            <div class="weather-icon">
+                <img src="" alt="">
+            </div>
+            <div class="city-name">
+                <h3 class="text-white"></h3>
+            </div>
+            <div class="weather-description">
+                <h class="text-white">
+                    </h3>
+            </div>
+
+            <div class="weather-data">
+                <h3 class="text-white"><sup>&#176</sup>C</h3>
+            </div>
+            <div class="weather-description">
+                <h3 class="text-white"></h3>
+            </div>
+            <div class="weather-humidity">
+                <h3 class="text-white"></h3>
+            </div>
+        </div>
+
+        <!-- ticket master event portion -->
+        <div class="container">
+            <div class="main-event text-center">
+                <p>
+                <div id="events"></div>
+                <div id="app"></div>
+                </p>
+            </div>
+        </div>
+
+        <!-- Navigation bar to the right -->
+        <nav class="menu">
+            <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item"><a
+                            href="https://openweathermap.org"
+                            class="pure-menu-link">Weather</a></li>
+                    <li class="pure-menu-item"><a href="https://www.ticketmaster.com/" class="pure-menu-link">Events</a>
+                    </li>
+                    <li class="pure-menu-item"><a href="https://github.com/ronaldm7/Know-Before-You-Go"
+                            class="pure-menu-link">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- header on main page  -->
+        <header class="header-container">
+            <div class="header">
+                <h1 class="head"> &#127780; Know Before You Go!</h1>
+                <p class="subhead">
+                    Need the weather report for an event? We have you covered.
+                </p>
+            </div>
+        </header>
+
+        <!--footer -->
+        <footer class="footer l-box is-center ">
+            Made by THE&#8226;TEAM
+        </footer>
 </body>
+
+
+<script src="assets/script.js"></script>
 
 </html>

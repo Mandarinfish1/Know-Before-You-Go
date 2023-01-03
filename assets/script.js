@@ -63,6 +63,7 @@ function showData(DataEvent){
 
     for(var i=0; i<DataEvent.page.size; i++) {
       document.querySelector('#app').insertAdjacentHTML ("afterbegin",DataEvent._embedded.events[i].name);
+      localStorage.setItem('#app', DataEvent._embedded.events[i].name);
     }
   
     }
@@ -82,7 +83,7 @@ function showDataw(DataWeather){
               </div>
   
               <div class="weather-icon">
-                  <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="">
+                  <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="">
               </div>
               
               <div class="weather-main">
