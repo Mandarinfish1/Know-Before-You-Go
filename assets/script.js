@@ -63,6 +63,7 @@ function showData(DataEvent){
 
     for(var i=0; i<DataEvent.page.size; i++) {
       document.querySelector('#app').insertAdjacentHTML ("afterbegin",DataEvent._embedded.events[i].name);
+      localStorage.setItem('#app', DataEvent._embedded.events[i].name);
     }
   
     }
