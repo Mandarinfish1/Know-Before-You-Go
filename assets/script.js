@@ -82,7 +82,7 @@ function showDataw(DataWeather){
               </div>
   
               <div class="weather-icon">
-                  <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="">
+                  <img src="" alt="">
               </div>
               
               <div class="weather-main">
