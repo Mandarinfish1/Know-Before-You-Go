@@ -1,40 +1,96 @@
+body {
+    min-height: 100vh;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /*menu to the right of page */
 .home-menu ul {
     float: right;
 }
-/*keeping everything centered on the page */
-.header-container {
+
+/*for background linear gradient */
+.main-container {
     background-image: linear-gradient(to right, #1f8dd6, #91c5e8, #b0dbf8);
     z-index: 1;
+    background-size: cover;
     overflow: hidden;
     width: 100%;
     height: 95%;
     top: 0;
     left: 0;
-    position: absolute !important;
 }
-/*keeping main header centered */
-.header {
-    height: 50%;
-    margin: auto;
-    position: absolute;
-    top: 100px; left: 0; bottom: 0; right: 0;
+
+/*keeping everything centered on the page */
+.header-container {
+    background-image: linear-gradient(to right, #1f8dd6, #91c5e8, #b0dbf8);
+    z-index: 1;
+    background-size: cover;
     text-align: center;
-    /*text-transform: uppercase; */
+    overflow: hidden;
+    width: 100%;
+    height: 95%;
+    top: 20%;
+    left: 0;
+
 }
+
+.weather-container {
+
+    background-image: linear-gradient(to right, #1f8dd6, #91c5e8, #b0dbf8);
+}
+
+/*font sizes and color of weather */
+.city-name {
+    font-size: 100%;
+    color: white;
+}
+
+.weather-data {
+    color: white;
+}
+
+.weather-description {
+    color: white;
+}
+
+.weather-humidity {
+    color: white;
+}
+
+.main-page {
+    color: white;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+/*ticketmaster data*/
+.main-event.text-center {
+    text-align: center;
+    color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+}
+
 
 .head {
     font-size: 250%;
     color: white;
-    
-    
+
+
 }
 
 .subhead {
     color: white;
     letter-spacing: 0.05em;
     opacity: 0.8;
-    
+
 }
 
 
@@ -42,33 +98,60 @@
     color: white;
     background-image: linear-gradient(to right, #1f8dd6, #91c5e8, #b0dbf8);
     text-align: center;
-    position: absolute !important;
+    position: fixed !important;
     bottom: 0;
     width: 100%;
-    height: 1%  
+
 }
+
 /*footer padding */
 .l-box {
-   padding: 1em; 
+    padding: 1em;
 }
 
 /*media query to keep site at 100% in all forms */
 @media screen and (max-width: 600px) {
     .header {
         width: 100%;
-    }  
     }
-    @media screen and (max-width: 768px) {
-        .header {
-          width: 100%;
-        }
+}
+
+@media screen and (max-width: 600px) {
+    .home-menu ul {
+        float: center;
     }
+}
+@media screen and (max-width: 768px) {
+    .header {
+        width: 100%;
+    }
+}
 
-    @media screen and (max-width: 992px) {
-        .header {
-          width: 100%;
-        }
-      }
+@media screen and (max-width: 768px) {
+    .home-menu ul {
+        float: center;
+    }
+}
+@media screen and (max-width: 992px) {
+    .header {
+        width: 100%;
+    }
+}
+/*media query to keep site at 100% in all forms */
+@media screen and (max-width: 600px) {
+    .main {
+        width: 100%;
+    }
+}
 
-     
+@media screen and (max-width: 768px) {
+    .main {
+        width: 100%;
+    }
+}
 
+@media screen and (max-width: 992px) {
+    .main {
+        width: 100%;
+    }
+}
