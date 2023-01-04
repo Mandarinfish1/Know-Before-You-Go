@@ -17,7 +17,7 @@
 ## Usage
 
 (Provide instructions and examples for use. Include screenshots as needed.)
-![Alt text](<Images/Screenshot%20(19).png>)
+![Alt text](<Images/Screenshot 2023-01-01 at 9.29.17 AM.png>)
 
 - To use the application click on the Weather button located on the top right to find weather conditions or click in the search bar on the middle to the page and do a search for the weather.
 - Click the Event button located on the top right to see Event locations or click in the search bar on the middle to the page
@@ -40,4 +40,4 @@
 - https://ronaldm7.github.io/Know-Before-You-Go/
 
 ##Screenshot:
-![Alt text](<Images/Screenshot%20(19).png>)
+![Alt text](<Images/Screenshot 2023-01-01 at 9.29.17 AM.png>)
